@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 20px;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    height: 327px;
+    background: #000;
+}
+
+.profile {
+    position: relative;
+    top: -100px;
+    padding-left: 80px;
+    display: flex;
+    gap: 1rem;
+}
+
+.profile-photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.profile-name {
+    margin-top: 40px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-top: -100px;
+}
+
+.section {
+    padding: 20px;
+}
+
+.quarter {
+    width: 25%;
+}
+
+.half {
+    width: 50%;
+}
+
+.topic {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.topic img {
+    margin-right: 10px;
+}
+
+.profile-data p,
+.profile-experience p,
+.profile-contact p,
+.profile-info p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.profile-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.profile-experience p,
+.profile-experience img {
+    margin-bottom: 10px;
+}
+
+.limelight {
+    font-family: 'Limelight', cursive;
+    font-size: 22px;
+}

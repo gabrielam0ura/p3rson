@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P3RSON</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/inicial.css" />
+  </head>
+  <body>
+    <header></header>
+    <div class="container">
+      <div class="form-container">
+        <h2>P3RSON</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="foto">Sua foto:</label>
+            <input type="file" id="foto" name="foto" required />
+          </div>
+
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="" required />
+          </div>
+
+          <div class="form-group">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" placeholder="" required />
+          </div>
+
+          <div class="form-group">
+            <label for="formacao">Formação:</label>
+            <input type="text" id="formacao" name="formacao" placeholder="Sua formação acadêmica" required />
+          </div>
+
+          <div class="form-group">
+            <label for="modalidade">Modalidade:</label>
+            <input type="text" id="modalidade" name="modalidade" placeholder="Presencial/Home office" required />
+          </div>
+
+          <div class="form-group">
+            <label for="experiencia">Experiência:</label>
+            <textarea
+              id="experiencia"
+              name="experiencia"
+              rows="4"
+              placeholder="Descreva sua experiência profissional"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="contato">Contato:</label>
+            <input type="text" id="contato" name="contato" placeholder="Informações para contato" required />
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
