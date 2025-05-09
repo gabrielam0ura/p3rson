@@ -12,11 +12,13 @@
     <div class="container">
       <div class="profile">
         <div class="profile-photo">
-          <img src="../static/images/kaila.jpg" alt="Foto de perfil" />
+          <img src="{{ url_for('static', filename='images/' + foto) }}" alt="Foto de perfil" />
         </div>
         <div class="profile-name">
-          <p>Gabriela Moura Silva</p>
-          <img src="../static/images/edit.png" alt="" />
+          <p>{{ nome }}</p>
+          <a href="{{ url_for('editar') }}">
+            <img src="../static/images/edit.png" alt="Editar perfil" />
+          </a>
         </div>
       </div>
 
@@ -27,9 +29,7 @@
               <img src="../static/images/core.png" alt="" />
               <p class="limelight">Sobre mim:</p>
             </div>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            </p>
+            <p>{{ sobremim }}</p>
           </div>
         </div>
 
@@ -39,9 +39,7 @@
               <img src="../static/images/home.png" alt="" />
               <p>EXPERIÊNCIA</p>
             </div>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            </p>
+            <p>{{ experiencia }}</p>
           </div>
 
           <div class="profile-contact">
@@ -49,9 +47,7 @@
               <img src="../static/images/contact.png" alt="" />
               <p>CONTATO</p>
             </div>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            </p>
+            <p>{{ contato }}</p>
           </div>
         </div>
 
@@ -62,10 +58,10 @@
               <p class="limelight">Dados pessoais</p>
             </div>
             <ul>
-              <li>Idade: 22 anos</li>
-              <li>Mora em: Itapajé - CE</li>
-              <li>Formação: Graduanda em Análise e Desenvolvimento de Sistemas</li>
-              <li>Modalidade: Home office</li>
+              <li>Idade: {{ idade }} anos</li>
+              <li>Mora em: {{ endereco }}</li>
+              <li>Formação: {{ formacao }}</li>
+              <li>Modalidade: {{ modalidade }}</li>
             </ul>
           </div>
         </div>
