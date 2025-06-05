@@ -1,5 +1,5 @@
 # p3rson
-Um projeto para criação de um perfil profissional.
+Um projeto para criação de um perfil profissional desenvolvido em Flask, permitindo que usuários preencham e compartilhem suas informações pessoais e profissionais de forma simples.
 
 ## Criando o ambiente virtual e ativando 
 ```bash
